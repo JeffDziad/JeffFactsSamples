@@ -12,11 +12,12 @@ namespace DogFactsSamples
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FactDetailPage : ContentPage
     {
-        public FactDetailPage(string ShortFact, string TheFact)
+        public FactDetailPage(string ShortFact, string TheFact, string imageSource)
         {
             InitializeComponent();
             shortFact.Text = ShortFact;
             theFact.Text = TheFact;
+            factImage.Source = imageSource;
         }
 
         private void FactPopupClose(object sender, EventArgs e)

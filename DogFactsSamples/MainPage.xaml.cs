@@ -25,7 +25,7 @@ namespace DogFactsSamples
                 return;
             }
             JeffFactData fact = (JeffFactData)e.SelectedItem;
-            FactDetailPage detailPage = new FactDetailPage(fact.ShortFact, fact.TheFact);
+            FactDetailPage detailPage = new FactDetailPage(fact.ShortFact, fact.TheFact, fact.imageSource);
             Navigation.PushModalAsync(detailPage);
             //DisplayAlert("The Fact", fact.TheFact, "Ok");
         }

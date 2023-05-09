@@ -5,9 +5,16 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="shortFact"></Label>
-            <Label x:Name="theFact"></Label>
-            <Image Source="loading"></Image>
+            <Button Text="Back" Clicked="FactPopupClose"></Button>
+            <StackLayout Orientation="Vertical" Margin="10">
+                <Label x:Name="shortFact" FontSize="20" TextColor="Black" FontAttributes="Bold"></Label>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="Black"
+                   Margin ="0, 0, 0, 0"/>
+                <Label x:Name="theFact" FontSize="16" TextColor="Black"></Label>
+            </StackLayout>
+            <Image x:Name="factImage" Source="loading.jpg"></Image>
         </StackLayout>
     </ContentPage.Content>
     
